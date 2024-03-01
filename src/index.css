@@ -1,0 +1,12 @@
+body {
+  padding: 20px;
+}
+
+td,
+th {
+  box-sizing: border-box;
+}
+
+td {
+  padding: 0;
+}

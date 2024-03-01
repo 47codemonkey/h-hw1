@@ -1,0 +1,54 @@
+table,
+th,
+td,
+ul {
+  border: 1px solid #000;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table {
+  border-spacing: 0;
+}
+
+.wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.brand-wrapper {
+  display: block;
+  background-color: rgb(151, 151, 151);
+}
+
+.brand-name {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.specs-wrapper {
+  display: block;
+  background-color: rgb(228, 112, 204);
+  font-weight: bold;
+}
+
+.specs-name {
+  width: 100px;
+  text-align: center;
+  background-color: rgb(42, 219, 192);
+}
+
+.specs-list {
+  width: 200px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}
