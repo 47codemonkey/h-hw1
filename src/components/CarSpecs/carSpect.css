@@ -1,7 +1,6 @@
 table,
 th,
-td,
-ul {
+td {
   border: 1px solid #000;
 }
 
@@ -14,25 +13,23 @@ table {
 }
 
 .wrapper {
+  width: 100%;
   max-width: 300px;
   margin: 0 auto;
 }
 
 .brand-wrapper {
-  display: block;
   background-color: rgb(151, 151, 151);
+  text-align: center;
 }
 
 .brand-name {
-  display: flex;
-  justify-content: center;
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
 }
 
 .specs-wrapper {
-  display: block;
   background-color: rgb(228, 112, 204);
   font-weight: bold;
 }
@@ -51,4 +48,9 @@ ul {
   list-style-type: none;
   padding: 5px;
   margin: 0;
+  border-bottom: 1px solid black;
+}
+
+ul:last-of-type {
+  border: none;
 }

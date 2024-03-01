@@ -33,25 +33,25 @@ export const CarSpecs: React.FC<CarsProps> = ({ specs }) => {
         {specs.map(({ id, brand, models }) => (
           <React.Fragment key={id}>
             <tr className="brand-wrapper" onClick={() => handleClick(id)}>
-              <td className="brand-name">{brand}</td>
+              <td className="brand-name" colSpan={2}>
+                {brand}
+              </td>
             </tr>
             {openSpecs === id &&
               models.map(({ id: modelId, name, collection }) => (
-                <React.Fragment key={modelId}>
-                  <tr className="specs-wrapper">
-                    <td className="specs-name">{name}</td>
-                    <td className="specs-list">
-                      {collection.map(({ id: collectionId, version, year, horsepower, engine }) => (
-                        <ul key={collectionId}>
-                          <li>Version: {version}</li>
-                          <li>Year: {year}</li>
-                          <li>Horsepower: {horsepower}</li>
-                          <li>Engine: {engine}</li>
-                        </ul>
-                      ))}
-                    </td>
-                  </tr>
-                </React.Fragment>
+                <tr key={modelId} className="specs-wrapper">
+                  <td className="specs-name">{name}</td>
+                  <td className="specs-list">
+                    {collection.map(({ id: collectionId, version, year, horsepower, engine }) => (
+                      <ul key={collectionId}>
+                        <li>Version: {version}</li>
+                        <li>Year: {year}</li>
+                        <li>Horsepower: {horsepower}</li>
+                        <li>Engine: {engine}</li>
+                      </ul>
+                    ))}
+                  </td>
+                </tr>
               ))}
           </React.Fragment>
         ))}
